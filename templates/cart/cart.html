@@ -1,0 +1,56 @@
+{% extends 'base/base_main.html' %}
+{% load static %}
+{% block extCSS %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/cart/css/cart.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="cart">
+        <h3>购物车</h3>
+        <div class="full">
+            <section>
+                <ul>
+                    <li>
+                        <span>&nbsp;收&nbsp;&nbsp;&nbsp;&nbsp;货&nbsp;&nbsp;&nbsp;&nbsp;人:&nbsp;&nbsp;Aka.臭&nbsp;屁&nbsp;文</span>
+                        <div>
+                            <p>
+                                <span>修改&gt;</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>&nbsp;电&nbsp;&nbsp;&nbsp;&nbsp;话:&nbsp;&nbsp;13370156379</li>
+                    <li>
+                        &nbsp;收&nbsp;&nbsp;货&nbsp;&nbsp;地&nbsp;&nbsp;址:&nbsp;&nbsp;机&nbsp;械&nbsp;厂&nbsp;扛&nbsp;把&nbsp;子
+                    </li>
+                </ul>
+                <div class="bill">
+                    <p>闪送超市</p>
+                    <p>满100减99,欢迎大家来抢!</p>
+                    <a href="#">凑单专区</a>
+                </div>
+                <div class="delivery">
+                    <span>收货时间</span>
+                    <span>一小时送到</span>
+                    <a href="#">可预订&gt;</a>
+                </div>
+                <div class="delivery">
+                    <span>备注留言：</span>
+                    <input type="text" placeholder="如有特殊需求,请留言">
+                </div>
+
+                <div class="payTheBill">
+                    <div class="confirm">
+                        <span></span>
+                    </div>
+                    <p>
+                        <span>全选</span>
+                        <span>共计</span>
+                        <span>总价</span>
+                    </p>
+                    <a href="#">下单</a>
+                </div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
