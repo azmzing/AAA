@@ -308,3 +308,7 @@ def add_to_cart(request):
         data['goods_num'] = cartmodel.c_goods_num
 
     return JsonResponse(data)
+
+def AAA(request):
+	'''点赞'''
+	retrun request('AAA')
