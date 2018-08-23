@@ -131,3 +131,7 @@ class CartModel(models.Model):
 
     class Meta:
         db_table = 'axf_cart'
+class AAA(models.Model):
+	a = xxx
+	b = xxx
+	c = xxx
